@@ -1,2 +1,2 @@
 # landing-page
-Basic product landing page from Odin Project fundamentals course.
+Product landing page from Odin Project foundations course.
