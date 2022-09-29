@@ -129,7 +129,16 @@ button {
     width: 280px;
     border: 6px solid var(--blue);
     border-radius: 20px;
+}
+
+#img-one {
     background: url(images/image2.jpg);
+    border: none;
+}
+
+#img-two {
+    background: url(images/image3.jpg);
+    border: none;
 }
 
 .subtext {
