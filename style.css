@@ -124,7 +124,7 @@ button {
 #info-row {
     margin-top: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .illustration {
@@ -189,11 +189,14 @@ button {
 #advert-section {
     height: 30vh;
     margin: 3rem 0;
+    display: flex;
+    align-items: center;
     background: var(--white);
 }
 
 #ad {
-    padding: 3rem 8rem;
+    width: 100%;
+    padding: 3.5rem 8rem;
     display: flex;
     justify-content: space-between;
     background: var(--blue);
@@ -211,4 +214,15 @@ button {
     padding: 0 34px;
     display: inline-block;
     border: 2px solid var(--white);
+}
+
+/* footer */
+footer {
+    height: 10vh;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--dark);
 }
