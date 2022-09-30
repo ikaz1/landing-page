@@ -52,7 +52,7 @@ button {
 #header {
     width: 100%;
     padding-top: 11px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
     display: flex;
     justify-content: space-between;
     background: var(--dark);
@@ -79,7 +79,7 @@ button {
 }
 
 /* hero */
-#hero {
+#hero-section {
     height: 50vh;
     margin-top: 2.5rem;
     padding-top: 4rem;
@@ -110,10 +110,9 @@ button {
 }
 
 /* information */
-#information {
+#info-section {
     height: 50vh;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    margin: 3rem 0;
     text-align: center;
     background: var(--white);
 }
@@ -154,3 +153,31 @@ button {
     font-size: 22px;
     color: var(--gray-two);
 }
+
+/* quote */
+#quote-section {
+    height: 50vh;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-two);
+    background: var(--gray-one);
+}
+
+#quote {
+    padding: 10px 0;
+    width: 80%;
+    font-size: 43px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#source {
+    width: 80%;
+    font-size: 33px;
+    font-weight: 700;
+    text-align: right;
+}
+
