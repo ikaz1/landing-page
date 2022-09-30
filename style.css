@@ -33,9 +33,9 @@ h2 {
 }
 
 button {
-    padding: 5px 32px;
+    padding: 7px 34px;
     color: var(--white);
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     background: var(--blue);
     border: none;
@@ -127,18 +127,25 @@ button {
 .illustration {
     height: 280px;
     width: 280px;
-    border: 6px solid var(--blue);
+    /* border: 6px solid var(--blue); */
+    /* border: none; */
     border-radius: 20px;
 }
 
 #img-one {
-    background: url(images/image2.jpg);
-    border: none;
+    background: url(images/image6.jpg);
 }
 
 #img-two {
     background: url(images/image3.jpg);
-    border: none;
+}
+
+#img-three {
+    background: url(images/image4.jpg);
+}
+
+#img-four {
+    background: url(images/image5.jpg);
 }
 
 .subtext {
