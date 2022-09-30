@@ -32,6 +32,10 @@ h2 {
     color: var(--dark);
 }
 
+h3 {
+    font-size: 34px;
+}
+
 button {
     padding: 7px 34px;
     color: var(--white);
@@ -39,7 +43,7 @@ button {
     font-weight: 700;
     background: var(--blue);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -181,3 +185,30 @@ button {
     text-align: right;
 }
 
+/* advertisement */
+#advert-section {
+    height: 30vh;
+    margin: 3rem 0;
+    background: var(--white);
+}
+
+#ad {
+    padding: 3rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    background: var(--blue);
+    border-radius: 10px;
+}
+
+#ad-subtext {
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+#ad-btn {
+    height: 48px;
+    margin-top: 15px;
+    padding: 0 34px;
+    display: inline-block;
+    border: 2px solid var(--white);
+}
