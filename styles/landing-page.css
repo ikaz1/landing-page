@@ -127,7 +127,6 @@ i {
     background: none;
     border: 3px solid var(--white);
     border-radius: 10px;
-    cursor: pointer;
 }
 
 #hero-img {
@@ -138,7 +137,7 @@ i {
 
 /* information */
 #info-section {
-    padding: 3rem 15%;
+    padding-bottom: 4.5rem;
     text-align: center;
     color: var(--white);
     /* background: var(--white); */
@@ -148,6 +147,10 @@ i {
         #171e28,
         #121720
     );
+}
+
+#info-heading {
+    padding-top: 4.5rem;
 }
 
 #info-row {
@@ -208,13 +211,13 @@ i {
 /* quote */
 #quote-section {
     height: 50vh;
-    margin: 3rem 0;
+    padding: 3rem 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--gray-two);
-    background: var(--gray-one);
+    color: #0c0f15;
+    background: var(--white);
 }
 
 #quote {
@@ -238,7 +241,12 @@ i {
     margin: 3rem 0;
     display: flex;
     align-items: center;
-    background: var(--white);
+    background: linear-gradient(
+        60deg,
+        var(--dark),
+        #171e28,
+        #121720
+    );
 }
 
 #ad {
@@ -246,8 +254,10 @@ i {
     padding: 3.5rem 8rem;
     display: flex;
     justify-content: space-between;
-    background: var(--blue);
+    /* background: var(--blue); */
+    border: 2px solid var(--white);
     border-radius: 10px;
+    filter: none;
 }
 
 #ad-subtext {
@@ -256,11 +266,18 @@ i {
 }
 
 #ad-btn {
-    height: 48px;
+    width: 18%;
+    padding: 2rem;
     margin-top: 15px;
     padding: 0 34px;
-    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
     border: 2px solid var(--white);
+    border-radius: 10px;
 }
 
 /* footer */
