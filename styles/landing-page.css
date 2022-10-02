@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -30,11 +31,17 @@ h1 {
 h2 {
     font-size: 46px;
     font-weight: 900;
-    color: var(--dark);
+    /* color: var(--dark); */
+    color: var(--white);
 }
 
 h3 {
     font-size: 34px;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 i {
@@ -94,7 +101,7 @@ i {
     justify-content: space-between;
     align-items: center;
     /* background: var(--dark); */
-    background: url(images/image8.jpg);
+    background: url(../images/image8.jpg);
     overflow: hidden;
     text-align: center;
 }
@@ -105,7 +112,7 @@ i {
 
 #hero-subtext {
     margin-top: 30px;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
     font-size: 32px;
     -webkit-text-stroke: 0.2px black;
     color: var(--gray-one);
@@ -131,16 +138,40 @@ i {
 
 /* information */
 #info-section {
-    height: 50vh;
-    margin: 3rem 0;
+    padding: 3rem 15%;
     text-align: center;
-    background: var(--white);
+    color: var(--white);
+    /* background: var(--white); */
+    background: linear-gradient(
+        60deg,
+        var(--dark),
+        #171e28,
+        #121720
+    );
 }
 
 #info-row {
-    margin-top: 3rem;
+    margin: 3rem 0;
     display: flex;
     justify-content: space-around;
+    gap: 5rem;
+}
+
+
+.product {
+    margin: 10px auto;
+    padding: 2px;
+    font-size: 30px;
+}
+
+.price {
+    margin: 0 auto;
+    padding: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    width: 60%;
 }
 
 .illustration {
@@ -152,26 +183,26 @@ i {
 }
 
 #img-one {
-    background: url(images/image6.jpg);
+    background: url(../images/image6.jpg);
 }
 
 #img-two {
-    background: url(images/image3.jpg);
+    background: url(../images/image3.jpg);
 }
 
 #img-three {
-    background: url(images/image4.jpg);
+    background: url(../images/image4.jpg);
 }
 
 #img-four {
-    background: url(images/image5.jpg);
+    background: url(../images/image5.jpg);
 }
 
-.subtext {
+.info-subtext {
     width: 280px;
     margin-top: 10px;
     font-size: 22px;
-    color: var(--gray-two);
+    /* color: var(--gray-two); */
 }
 
 /* quote */
