@@ -87,12 +87,11 @@ i {
     list-style: none;
     font-size: 20px;
     line-height: 50px;
-    border-bottom: 0px solid var(--white);
-    transition: all 80ms ease-in;
+    transition: all 80ms ease-in-out;
 }
 
 #navbar li:hover {
-    border-width: 2px;
+    border-bottom: 2px solid var(--white);
     padding-bottom: 3px;
 }
 
@@ -137,6 +136,13 @@ i {
     background: none;
     border: 3px solid var(--white);
     border-radius: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+#get-started-btn:hover {
+    background: var(--white);
+    color: #262521;
+    padding: 20px 3.7rem;
 }
 
 #hero-img {
@@ -166,13 +172,25 @@ i {
 
 
 .product {
-    margin: 10px auto;
+    margin: 10px auto 0;
     padding: 2px;
     font-size: 30px;
 }
 
-.price {
+.mouseover {
     margin: 0 auto;
+    height: 2px;
+    width: 0%;
+    background: var(--white);
+    transition: all 350ms ease-in-out;
+}
+
+.product-name:hover .mouseover {
+    width: 55%;
+}
+
+.price {
+    margin: 13px auto 10px;
     padding: 2px;
     font-family: 'Lato', sans-serif;
     font-size: 26px;
@@ -207,7 +225,6 @@ i {
 
 .info-subtext {
     width: 280px;
-    margin-top: 10px;
     font-size: 22px;
     /* color: var(--gray-two); */
 }
@@ -231,6 +248,12 @@ i {
     font-size: 43px;
     font-weight: 300;
     font-style: italic;
+    transition: all 300ms ease-in-out;
+}
+
+#quote:hover {
+    width: 83%;
+    font-size: 47px;
 }
 
 #source {
@@ -278,22 +301,41 @@ i {
     background: none;
     border: 3px solid var(--white);
     border-radius: 10px;
+    transition: all 180ms ease-in-out;
+}
+
+#ad-btn:hover {
+    background: var(--white);
+    color: #171e28;
 }
 
 /* footer */
 footer {
     padding: 2rem 15%;
-    font-size: 24px;
+    font-size: 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-top: 2px solid var(--white);
-    border-bottom: none;
+}
+
+footer a {
+    transition: all 80ms ease-in-out;
+}
+
+footer a:hover {
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 3px;
+}
+
+span {
+    margin-left: 3px;
 }
 
 #note {
     margin-top: 20px;
     font-size: 15px;
 }
+
