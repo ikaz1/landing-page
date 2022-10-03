@@ -83,7 +83,13 @@ i {
     list-style: none;
     font-size: 20px;
     line-height: 50px;
-    color: var(--gray-one);
+    border-bottom: 0px solid var(--white);
+    transition: all 80ms ease-in;
+}
+
+#navbar li:hover {
+    border-width: 2px;
+    padding-bottom: 3px;
 }
 
 #navbar a {
@@ -216,8 +222,9 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #0c0f15;
-    background: var(--white);
+    /* color: #0c0f15; */
+    color: var(--white);
+    background: url(../images/image9.jpg);
 }
 
 #quote {
@@ -238,7 +245,7 @@ i {
 /* advertisement */
 #advert-section {
     height: 30vh;
-    margin: 3rem 0;
+    padding: 3rem 15%;
     display: flex;
     align-items: center;
     background: linear-gradient(
