@@ -17,6 +17,10 @@
 }
 
 /* global styling */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--white);
