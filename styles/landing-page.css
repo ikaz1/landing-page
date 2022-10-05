@@ -157,7 +157,8 @@ i {
 
 /* information */
 #info-section {
-    padding: 5rem 15%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     text-align: center;
     color: var(--white);
     border-top: 4px solid #121720;
@@ -166,10 +167,9 @@ i {
 #info-row {
     margin: 3rem 0 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 5rem;
 }
-
 
 .product {
     margin: 10px auto 0;
@@ -231,7 +231,8 @@ i {
 
 /* quote */
 #quote-section {
-    height: 50vh;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,11 +244,12 @@ i {
 }
 
 #quote {
-    padding: 10px 0;
+    padding: 20px 0;
     width: 80%;
     font-size: 43px;
     font-weight: 300;
     font-style: italic;
+    -webkit-text-stroke: 0.2px black;
     transition: all 300ms ease-in-out;
 }
 
@@ -265,7 +267,8 @@ i {
 
 /* contact */
 #contact-section {
-    padding: 5rem 15% 6rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
     font-size: 38px;
     border-top: 4px solid #121720;
 }
@@ -293,7 +296,6 @@ i {
 
 /* advertisement */
 #advert-section {
-    height: 30vh;
     display: flex;
     align-items: center;
     background: linear-gradient(
@@ -311,10 +313,15 @@ i {
     padding: 3.5rem 8rem;
     display: flex;
     justify-content: space-between;
-    /* background: var(--blue); */
+    gap: 2rem;
     border: 4px solid #171e28;
     border-radius: 10px;
     filter: none;
+}
+
+#ad > div {
+    width: 80%;
+    margin-top: 15px;
 }
 
 #ad-subtext {
@@ -323,12 +330,11 @@ i {
 }
 
 #ad-btn {
-    width: 18%;
-    padding: 2rem;
-    margin-top: 15px;
-    padding: 0 34px;
+    width: 20%;
+    height: 5rem;
+    margin-top: 13px;
     color: #171e28;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -346,7 +352,7 @@ i {
 
 /* footer */
 footer {
-    padding: 2rem 15%;
+    padding: 2rem;
     font-size: 28px;
     display: flex;
     flex-direction: column;
@@ -374,3 +380,103 @@ span {
     font-size: 15px;
 }
 
+/* media queries */
+@media (max-width: 1850px) {
+    #ad {
+        gap: 5rem;
+    }
+
+    #ad > div {
+        width: 65%;
+        margin: 0;
+    }
+
+    #ad-btn {
+        height: 5rem;
+        width: 25%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1540px) {
+    #quote-section {
+        background: url(../images/image10.jpg);
+    }
+
+    #ad > div {
+        width: 64%;
+        margin-top: 12px;
+    }
+
+    #ad-btn {
+        margin-top: 3.2rem;
+    }
+
+}
+
+@media (max-width: 1400px) {
+    #info-row {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #ad > div {
+        width: 60%;
+    }
+
+    #ad-btn {
+        margin-top: 3.8rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 3rem 9%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .container {
+        padding: 3rem 5%;
+    }
+
+    #quote-section {
+        background: url(../images/image11.jpg)
+    }
+
+    #contact-section {
+        padding: 5rem 15% 6rem;
+    }
+
+    #contact-list {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 850px) {
+    #header, #ad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #navbar {
+        margin-top: 8px;
+    }
+
+    #navbar li:not(#navbar li:first-of-type) {
+        margin-left: 4rem;
+    }
+
+    #ad {
+        gap: 2rem;
+    }
+
+    #ad > div, #ad-btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
