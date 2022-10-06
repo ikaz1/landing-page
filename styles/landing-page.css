@@ -433,6 +433,14 @@ span {
     .container {
         padding: 3rem 9%;
     }
+
+    #quote {
+        font-size: 38px;
+    }
+
+    #source {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 1030px) {
@@ -472,11 +480,50 @@ span {
     }
 
     #ad {
+        padding: 3rem 5rem;
         gap: 2rem;
     }
 
     #ad > div, #ad-btn {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    #navbar {
+        display: none;
+    }
+
+    #ad {
+        padding: 2rem;
+    }
+
+    #quote-section {
+        padding: 4rem 0;
+        background: url(../images/image12.jpg);
+    }
+
+    #quote, #quote:hover {
+        padding: 0 0 15px;
+        font-size: 33px;
+    }
+
+    #source {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 380px) {
+    #quote-section {
+        background: url(../images/image13.jpg);
+    }
+
+    #quote, #quote:hover {
+        font-size: 30px;
+    }
+
+    #source {
+        font-size: 20px;
     }
 }
