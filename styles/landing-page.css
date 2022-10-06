@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -60,6 +68,12 @@ i {
 /* container */
 .container, footer {
     padding: 3rem 15%;
+    background: -o-linear-gradient(
+        30deg,
+        var(--dark-one),
+        var(--dark-two),
+        var(--dark-three)
+    );
     background: linear-gradient(
         60deg,
         var(--dark-one),
@@ -74,8 +88,12 @@ i {
     width: 100%;
     margin: 0;
     padding: 13px 2.5rem 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: fixed;
     top: 0;
 }
@@ -89,6 +107,8 @@ i {
     margin-left: 30px;
     font-size: 20px;
     line-height: 50px;
+    -webkit-transition: all 130ms ease-in-out;
+    -o-transition: all 130ms ease-in-out;
     transition: all 130ms ease-in-out;
 }
 
@@ -108,9 +128,15 @@ i {
     margin-top: 2.5rem;
     padding-top: 4rem;
     padding-bottom: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: url(../images/hero.jpg);
     overflow: hidden;
     text-align: center;
@@ -137,6 +163,8 @@ i {
     background: none;
     border: 3px solid var(--white);
     border-radius: 10px;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
 
@@ -163,8 +191,12 @@ i {
 
 #info-row {
     margin: 3rem 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 5rem;
 }
 
@@ -179,6 +211,8 @@ i {
     height: 2px;
     width: 0%;
     background: var(--white);
+    -webkit-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
     transition: all 350ms ease-in-out;
 }
 
@@ -227,10 +261,19 @@ i {
 #quote-section {
     padding-top: 6rem;
     padding-bottom: 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: var(--white);
     background: url(../images/quote1.jpg);
     border: none;
@@ -243,6 +286,8 @@ i {
     font-weight: 300;
     font-style: italic;
     -webkit-text-stroke: 0.2px black;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
 
@@ -275,22 +320,42 @@ i {
 
 #contact-list {
     margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #contact-list > a {
+    -webkit-transition: -webkit-transform 270ms ease-out;
+    transition: -webkit-transform 270ms ease-out;
+    -o-transition: transform 270ms ease-out;
     transition: transform 270ms ease-out;
+    transition: transform 270ms ease-out, -webkit-transform 270ms ease-out;
 }
 
 #contact-list > a:hover {
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+            transform: translateY(-8px);
 }
 
 /* advertisement */
 #advert-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -o-linear-gradient(
+        30deg,
+        #e4e4e4,
+        40% var(--white),
+        #e4e4e4
+    );
     background: linear-gradient(
         60deg,
         #e4e4e4,
@@ -304,12 +369,17 @@ i {
 #ad {
     width: 100%;
     padding: 3.5rem 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 2rem;
     border: 4px solid var(--dark-two);
     border-radius: 10px;
-    filter: none;
+    -webkit-filter: none;
+            filter: none;
 }
 
 #ad > div {
@@ -329,12 +399,20 @@ i {
     color: var(--dark-two);
     font-size: 28px;
     font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: none;
     border: 4px solid var(--dark-two);
     border-radius: 10px;
+    -webkit-transition: all 180ms ease-in-out;
+    -o-transition: all 180ms ease-in-out;
     transition: all 180ms ease-in-out;
 }
 
@@ -347,15 +425,26 @@ i {
 footer {
     padding: 2rem;
     font-size: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     border-top: 4px solid var(--dark-three);
 }
 
 footer a {
+    -webkit-transition: all 80ms ease-in-out;
+    -o-transition: all 80ms ease-in-out;
     transition: all 80ms ease-in-out;
 }
 
@@ -409,8 +498,10 @@ span {
 
 @media (max-width: 1400px) {
     #info-row {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     #ad > div {
@@ -450,17 +541,26 @@ span {
     }
 
     #contact-list {
-        justify-content: space-around;
-        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 4rem;
     }
 }
 
 @media (max-width: 850px) {
     #header, #ad {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
     }
 
