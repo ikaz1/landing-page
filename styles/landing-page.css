@@ -62,7 +62,7 @@ i {
     padding: 3rem 15%;
     background: linear-gradient(
         60deg,
-        var(--dark),
+        var(--dark-one),
         var(--dark-two),
         var(--dark-three)
     );
@@ -111,7 +111,7 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url(../images/image8.jpg);
+    background: url(../images/hero.jpg);
     overflow: hidden;
     text-align: center;
 }
@@ -203,19 +203,19 @@ i {
 }
 
 #img-one {
-    background: url(../images/image6.jpg);
+    background: url(../images/cam1.jpg);
 }
 
 #img-two {
-    background: url(../images/image3.jpg);
+    background: url(../images/cam2.jpg);
 }
 
 #img-three {
-    background: url(../images/image4.jpg);
+    background: url(../images/headphone1.jpg);
 }
 
 #img-four {
-    background: url(../images/image5.jpg);
+    background: url(../images/headphone2.jpg);
 }
 
 .info-subtext {
@@ -232,7 +232,7 @@ i {
     justify-content: center;
     align-items: center;
     color: var(--white);
-    background: url(../images/image9.jpg);
+    background: url(../images/quote1.jpg);
     border: none;
 }
 
@@ -393,7 +393,7 @@ span {
 
 @media (max-width: 1540px) {
     #quote-section {
-        background: url(../images/image10.jpg);
+        background: url(../images/quote2.jpg);
     }
 
     #ad > div {
@@ -442,7 +442,7 @@ span {
     }
 
     #quote-section {
-        background: url(../images/image11.jpg)
+        background: url(../images/quote3.jpg)
     }
 
     #contact-section {
@@ -494,7 +494,7 @@ span {
 
     #quote-section {
         padding: 4rem 0;
-        background: url(../images/image12.jpg);
+        background: url(../images/quote4.jpg);
     }
 
     #quote, #quote:hover {
@@ -509,7 +509,7 @@ span {
 
 @media (max-width: 380px) {
     #quote-section {
-        background: url(../images/image13.jpg);
+        background: url(../images/quote5.jpg);
     }
 
     #quote, #quote:hover {
