@@ -20,6 +20,28 @@ body {
   color: var(--white);
 }
 
+#side-img {
+  background: url(../images/form-cam.jpg);
+  background-size: cover;
+  border-right: 4px solid var(--dark-three);
+}
+
+#side-img > div {
+  padding: 27px 10px;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20%;
+}
+
+#side-img i {
+  padding: 0 15px;
+  font-size: 3rem;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
