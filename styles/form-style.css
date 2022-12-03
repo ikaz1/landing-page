@@ -16,35 +16,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--white);
-}
-
-#side-img {
-  background: url(../images/form-cam.jpg);
-  background-size: cover;
-  border-right: 4px solid var(--dark-three);
-}
-
-#side-img > div {
-  padding: 27px 10px;
-  font-size: 1.2rem;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 20%;
-}
-
-#side-img i {
-  padding: 0 15px;
-  font-size: 3rem;
-}
-
-.container {
   width: 100vw;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
   background: linear-gradient(
         90deg,  
         var(--dark-one),
@@ -53,4 +28,81 @@ body {
     );
   display: grid;
   grid-template-columns: 40% 60%;
+}
+
+/* image sidebar */
+#sidebar-img {
+  background: url(../images/form-cam.jpg);
+  background-size: cover;
+  border-right: 2px solid var(--dark-three);
+}
+
+#sidebar-img > div {
+  padding: 28px 10px;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 22%;
+}
+
+#sidebar-img i {
+  padding: 5px 6px;
+  margin: 0 15px;
+  font-size: 3rem;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  border-radius: 8px 3px;
+}
+
+/* right section */
+#form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form-section .bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#form-section p {
+  padding: 0 5%;
+}
+
+#form-section p:first-child {
+  margin-bottom: 25px;
+}
+
+/* form */
+form {
+  width: 100%;
+  margin: 40px 0;
+  padding: 22px 5%;
+  background: linear-gradient(
+        90deg,  
+        var(--dark-one),
+        var(--dark-two)
+    );
+  box-shadow: 6px 6px 15px 5px rgba(15, 18, 26, 0.9);
+}
+
+form fieldset {
+  padding: 20px 0;
+  border: none;
+  display: grid;
+  grid-template: repeat(3, 1fr) / 30% 30%;
+  gap: 20px; 
+}
+
+.form-row label {
+  display: block;
+}
+
+.form-row input {
+  appearance: none;
+  width: 80%;
 }
