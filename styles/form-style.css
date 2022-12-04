@@ -82,7 +82,7 @@ body {
 }
 
 /* form */
-form fieldset {
+fieldset {
   width: 100%;
   margin: 40px 0;
   padding: 70px 5% 22px;
@@ -93,9 +93,6 @@ form fieldset {
     );
   box-shadow: 6px 6px 15px 5px rgba(15, 18, 26, 0.9);
   border: none;
-  display: grid;
-  grid-template: repeat(3, 1fr) / 0.4fr 0.4fr;
-  gap: 20px; 
   position: relative;
 }
 
@@ -105,7 +102,26 @@ fieldset legend {
   left: 5%;
 }
 
+#form-grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / 1fr 1fr;
+  gap: 20px; 
+}
+
+.form-row {
+  position: relative;
+}
+
+.form-row i {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 28px;
+  right: 42%;
+  visibility: hidden;
+}
+
 .form-row label {
+  width: 100%;
   margin-bottom: 5px;
   letter-spacing: 1px;
   display: block;
@@ -113,6 +129,8 @@ fieldset legend {
 
 .form-row input {
   appearance: none;
+  outline: none;
+  width: 60%;
   padding: 5px;
   font-size: 16px;
   color: white;
@@ -122,7 +140,37 @@ fieldset legend {
 }
 
 .form-row input:focus {
-  outline: 2px solid magenta;
+ /* border: 1px solid blue; */
+ box-shadow: 3px 3px 5px #0f121a;
+}
+
+.form-row input:valid:not(input[type="tel"]) {
+  border-color: lime;
+}
+
+.form-row input:valid ~ .fa-check {
+  right: 41%;
+  color: lime;
+  visibility: visible;
+}
+
+.form-row input:invalid {
+  border-color: red;
+}
+
+.form-row input:invalid ~ .fa-xmark {
+  top: 29px;
+  color:red;
+  visibility: visible;
+}
+
+.form-row input::after {
+  content: "*Passwords must be matching";
+  width: 50px;
+  height: 50px;
+  color: red;
+  font-size: 20px;
+  position: relative;
 }
 
 #log-in {
