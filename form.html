@@ -53,7 +53,7 @@
               <input type="email" 
                      id="email" 
                      name="email" 
-                     placeholder="name@example.com"
+                     placeholder="e.g. name@example.com"
                      required>
               <i class="fa-solid fa-check"></i>
               <i class="fa-solid fa-xmark"></i>
@@ -64,7 +64,8 @@
               <input type="tel" 
                      id="phone-number" 
                      name="phone-number"
-                     required>
+                     pattern="(\d{3}[\-]\d{3}[\-]\d{4})"
+                     placeholder="e.g. 123-456-7890">
               <i class="fa-solid fa-check"></i>
               <i class="fa-solid fa-xmark"></i>
             </div>
