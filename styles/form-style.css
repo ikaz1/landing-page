@@ -115,7 +115,7 @@ fieldset legend {
 .form-row i {
   font-size: 1.3rem;
   position: absolute;
-  top: 28px;
+  top: 29px;
   right: 42%;
   visibility: hidden;
 }
@@ -139,38 +139,37 @@ fieldset legend {
   border-radius: 3px;
 }
 
+.form-row input:required ~ span::after {
+  content: "*";
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: -8px;
+}
+
 .form-row input:focus {
- outline: 2px solid blue;
  box-shadow: 3px 3px 5px #0f121a;
 }
 
-.form-row input:required:valid {
+/* validation styling */
+.form-row input:focus:valid {
   border-color: lime;
 }
 
-.form-row input:required:valid ~ .fa-check {
+.form-row input:focus:valid ~ .fa-check {
   right: 41%;
   color: lime;
   visibility: visible;
 }
 
-.form-row input:required:invalid {
+.form-row input:focus:invalid {
   border-color: red;
 }
 
-.form-row input:required:invalid ~ .fa-xmark {
-  top: 29px;
+.form-row input:focus:invalid ~ .fa-xmark {
+  top: 30px;
   color:red;
   visibility: visible;
-}
-
-.form-row input::after {
-  content: "*Passwords must be matching";
-  width: 50px;
-  height: 50px;
-  color: red;
-  font-size: 20px;
-  position: relative;
 }
 
 /* submit */
@@ -194,8 +193,8 @@ button:hover {
 }
 
 #log-in {
-  font-size: 1.2rem;
   margin-left: -5%;
+  font-size: 1.2rem;
 }
 
 #log-in a {
