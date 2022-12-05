@@ -137,6 +137,7 @@ fieldset legend {
   background: transparent;
   border: 2px solid var(--white);
   border-radius: 3px;
+  transition: all 130ms ease-in-out;
 }
 
 .form-row input:required ~ span::after {
@@ -147,8 +148,8 @@ fieldset legend {
   left: -8px;
 }
 
-.form-row input:focus {
- box-shadow: 3px 3px 5px #0f121a;
+.form-row input:focus, .form-row input:hover {
+ box-shadow: 5px 5px 7px 2px #0f121a;
 }
 
 /* validation styling */
@@ -156,14 +157,14 @@ fieldset legend {
   border-color: lime;
 }
 
+.form-row input:focus:invalid {
+  border-color: red;
+}
+
 .form-row input:focus:valid ~ .fa-check {
   right: 41%;
   color: lime;
   visibility: visible;
-}
-
-.form-row input:focus:invalid {
-  border-color: red;
 }
 
 .form-row input:focus:invalid ~ .fa-xmark {
