@@ -188,10 +188,6 @@ fieldset legend {
   left: 140px;
 }
 
-.form-row:last-child {
-  display: none;
-}
-
 /* validation styling */
 .form-row input:focus:valid {
   border-color: lime;
@@ -258,8 +254,6 @@ button:hover {
 footer {
   margin: 25px 5%;
   font-size: 1.2rem;
-  position: absolute;
-  bottom: 0;
 }
 
 footer a {
@@ -319,27 +313,52 @@ footer span {
     top: 26%;
   }
 
+  #form-section .bold, form, #log-in, footer {
+    text-align: center;
+  }
+
   #form-section .bold {
     margin: 0 5%;
   }
 
   fieldset {
     margin: 25px 0;
-    padding: 60px 5% 20px;
+    padding: 60px 3% 20px;
   }
 
   fieldset legend {
+    width: 100%;
     top: 18px;
-    left: 17px;
+    left: -5%;
   }
 
-  .form-row input:focus:valid ~ .fa-check, 
+  .form-row {
+    text-align: left;
+  }
+
+  .form-row:last-child {
+    width: 60%;
+    margin: 0 auto;
+    grid-column: 1 / span 2;
+  }
+
+  .form-row input {
+    width: 100%;
+  }
+
+  .form-row input[type="tel"] + span {
+    left: 125px;
+  }
+
+  .form-row input:focus:valid ~ .fa-check {
+    right: 1.5%;
+  }
+
   .form-row input:focus:invalid ~ .fa-xmark {
-    right: 12.5%;
+    right: 2%;
   }
 
   button {
-    margin-bottom: 20px;
-    padding: 9px 28px;
+    margin: 0 0 20px;
   }
 }
