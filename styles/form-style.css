@@ -88,6 +88,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 #form-section .bold {
@@ -248,9 +249,29 @@ button:hover {
   transition: all 130ms ease-in-out;
 }
 
-#log-in a:hover {
+#log-in a:hover, footer a:hover {
   padding-bottom: 3px;
   border-bottom: 2px solid var(--white);
+}
+
+/* footer */
+footer {
+  margin: 25px 5%;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white);
+  -webkit-transition: all 80ms ease-in-out;
+  -o-transition: all 80ms ease-in-out;
+  transition: all 80ms ease-in-out;
+}
+
+footer span {
+  font-weight: bold;
 }
 
 @media (max-width: 1100px) {
