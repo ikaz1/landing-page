@@ -254,6 +254,8 @@ button:hover {
 footer {
   margin: 25px 5%;
   font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
 }
 
 footer a {
@@ -285,12 +287,15 @@ footer span {
   }
 
   body {
+    height: auto;
     -ms-grid-rows: 26% 74%;
     -ms-grid-columns: 100%;
-        grid-template: 26% 74% / 100%;
+        grid-template: 24% 76% / 100%;
   }
 
   #sidebar-img {
+    height: 24vh;
+    margin-bottom: 20px;
     background: url(../images/form-cam2.jpg);
     background-size: cover;
     border: none;
@@ -360,5 +365,9 @@ footer span {
 
   button {
     margin: 0 0 20px;
+  }
+
+  footer {
+    position: initial;
   }
 }
