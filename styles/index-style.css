@@ -137,6 +137,7 @@ i {
         -ms-flex-align: center;
             align-items: center;
     background: url(../images/hero.jpg);
+    background-size: cover;
     overflow: hidden;
     text-align: center;
 }
@@ -275,6 +276,7 @@ i {
             align-items: center;
     color: var(--white);
     background: url(../images/quote1.jpg);
+    background-size: cover;
     border: none;
 }
 
@@ -480,10 +482,6 @@ span {
 }
 
 @media (max-width: 1540px) {
-    #quote-section {
-        background: url(../images/quote2.jpg);
-    }
-
     #ad > div {
         width: 64%;
         margin-top: 12px;
@@ -532,7 +530,7 @@ span {
     }
 
     #quote-section {
-        background: url(../images/quote3.jpg)
+        background: url(../images/quote2.jpg);
     }
 
     #contact-section {
@@ -592,8 +590,8 @@ span {
     }
 
     #quote-section {
-        padding: 4rem 0;
-        background: url(../images/quote4.jpg);
+        padding: 5.5rem 0;
+        background: url(../images/quote3.jpg);
     }
 
     #quote, #quote:hover {
@@ -608,7 +606,7 @@ span {
 
 @media (max-width: 380px) {
     #quote-section {
-        background: url(../images/quote5.jpg);
+        background: url(../images/quote4.jpg);
     }
 
     #quote, #quote:hover {
